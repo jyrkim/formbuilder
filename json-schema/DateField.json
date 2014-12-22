@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "DateField",
+    "description": "DateField for FormBuilder",
+    "type": "object",
+    "properties": {
+        "type": {
+            "description": "dateField is the identifier for a DateField type",
+            "type": "string"
+        },
+        "title": {
+            "description": "title text for a DateField question",
+            "type": "string"
+        },
+        "helpText": {
+            "description": "help text for a DateField",
+            "type": "string"
+        },
+		"requiredQuestion": {
+            "description": "is this field a required question",
+            "type": "boolean"
+        },
+		"includeYear": {
+            "description": "if true show and allow year input for the DateField; if false then year input is hidden",
+            "type": "boolean"
+        },
+		"includeTime": {
+            "description": "if true show and allow time input for the DateField; if false then time input is hidden",
+            "type": "boolean"
+        }
+    },
+    "required": ["type"]
+}

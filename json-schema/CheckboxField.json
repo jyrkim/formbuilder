@@ -1,0 +1,72 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "CheckBox Field (MultiChoice)",
+    "description": "description": "CheckBox Field for FormBuilder. Appears for the user as <INPUT Type='checkbox' >",
+    "type": "object",
+    "properties": {
+        "type": {
+            "description": "checkBox is the identifier for a CheckBox type",
+            "type": "string"
+        },
+        "title": {
+            "description": "title text text for a CheckBox",
+            "type": "string"
+        },
+        "helpText": {
+            "description": "help text for a CheckBox",
+            "type": "string"
+        },
+		"optionsText": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                },
+                "minItems": 1
+         }, 
+		 "useOther": {
+				"description": "use other field for option texts",
+				"type": "boolean"
+        },
+		"requiredQuestion": {
+            "description": "is field a required Question",
+            "type": "boolean"
+        },
+		"advancedSettings": {
+                "type": "object",
+                "properties": {
+                    "dataValidation": {
+                        "description": "is data validation used true/false",
+						"type": "boolean"
+				     },
+				     "checkBoxValidation": {
+					    "description": "what type of check count validation is done",
+						"type": "object",
+                		"properties": {
+								"type": "string",
+									"oneOf": [
+                						{ "format": "select_at_least" },              		
+                						{ "format": "select_at_most" },
+										{ "format": "select_exactly" } ]
+								},
+			 					"checkCount": {
+									"description": "number value used for checkbox validation",
+									"type": "number"
+								},
+							}
+					 },
+					"shuffleOrder": {
+					    "description": "is shuffle order used for checkboxes",
+						"type": "boolean" 
+					}
+					"errorText": {
+						"description": "error text",
+               			"type": "string"
+        			}
+                },
+                "required": ["dataValidation"]
+            }
+
+    },
+    "required": ["type"]
+}
+

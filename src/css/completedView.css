@@ -1,0 +1,334 @@
+﻿/* completed view style sheets*/
+
+
+.c-view-item {
+
+    margin-left: 3px;
+    cursor: move;
+}
+
+
+.c-view-container {
+   display: block;
+
+   padding-left: 4px;
+
+   color: black;
+}
+
+
+.c-view-table {
+    width: 100%;
+}
+
+.c-view-table > tr > td{
+    white-space: nowrap;
+}
+
+.c-view-table > tr > td:first-child{
+    min-width: 655px;
+
+}
+
+.c-view-table > tr > td:nth-child(2){
+    width: 100%;
+
+}
+
+.c-view-title {
+    display: block;
+    font-weight: bold;
+    cursor: move;
+    margin-bottom: 2px; 
+
+}
+
+.c-view-helpText {
+
+    display: block;
+ /*   margin: .1em 0 .25em 0;*/
+    margin-left: 1px;
+    cursor: move;
+
+
+}
+
+.c-view-label {
+    display: inline;
+    margin-right: 20px;
+    cursor: move;
+}
+
+.c-view-input-txt {
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    font-size: 13px;
+    height: 23px;  /*25px; */
+    padding: 1px 8px;
+
+    vertical-align: middle;
+    margin-left: 4px;
+    margin-top: 4px;
+    background-color: rgb(235, 235, 228);
+    cursor: move;
+    width: 170px;
+}
+
+.c-view-parag-table 
+{
+    width: 90%;
+}
+
+.c-view-parag-table td
+{
+    white-space: nowrap;
+}
+
+.c-view-parag-table td:first-child
+{
+    padding-left: 0px;
+}
+
+.c-view-parag-table td:nth-child(2)
+{
+    width: 100%;
+}
+
+.c-view-input-parag {
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    font-size: 13px;
+    height: 23px;  /*25px; */
+    padding: 1px 8px;
+
+    vertical-align: middle;
+    margin-left: 4px;
+    margin-top: 4px;
+
+    background-color: rgb(235, 235, 228);
+
+    cursor: move;
+
+    padding-bottom: 4px;
+    padding-top: 4px;
+    resize: none;
+     width: 60%;
+}
+/*
+.c-view-input-rb {
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    font-size: 13px;
+    height: 23px;  
+    padding: 1px 8px;
+
+    vertical-align: middle;
+    margin-left: 0;
+    margin-top: .1em;
+
+    background-color: rgb(235, 235, 228);
+
+    cursor: move;
+
+    padding-bottom: 4px;
+    padding-top: 4px;
+    resize: none;
+     width: 60%;
+}
+
+    */
+
+/* multiChoice */
+/*.c-view-multi-ul
+{
+    margin: .5em 0 0;
+    list-style: none;
+    padding: 0;
+}
+
+
+.c-view-multi-li
+{
+
+    margin: 0;
+    line-height: 1.3em;
+    padding-bottom: .5em;
+}
+
+.c-view-multi-li input[type="checkbox"]
+{
+    margin-bottom: 0px;
+} */
+
+.c-view-multi-select
+{
+    margin-left: 4px;
+}
+
+
+.c-view-multi-table 
+{
+    display: inline-block;
+    margin-left: 4px;
+}
+
+.c-view-multi-tr div
+{
+    padding-bottom: 0px;
+}
+
+.c-view-multi-table > tr > td:first-child
+{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.c-view-multi-table > tr > td:nth-child(2)
+{
+    padding-left: 0px;
+}
+
+.c-view-multi-table input[type="checkbox"], .c-view-multi-table input[type="radio"]
+{
+    margin-left: 0px;
+    cursor: move;
+}
+
+.c-view-multi-table input[disabled]
+{
+    margin-left: 2px;
+    cursor: move;
+    height: 12px;
+    width: 120px;
+}
+
+/*only for radioButton and checkBox */
+.c-view-multi-label
+{
+    margin-right: 20px;
+}
+
+
+/* grid */
+
+.c-view-grid-table  {
+    border: 0;
+    border-collapse: collapse;
+   /*width: 760px; */ 
+}
+
+.c-view-grid-tr  td:first-child 
+{
+    min-width: 100px;
+    max-width: 200px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+
+.c-view-grid-table td {
+
+    padding: .45em .25em; /* padding: .5em .25em;*/
+
+}
+
+.c-view-grid-table tr {
+
+    border-bottom: 1px solid #d3d8d3; 
+    color: #666;
+
+    text-align: center;
+
+}
+
+.c-view-grid-table tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+.c-view-grid-table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+/*
+.c-view-grid-table td:nth-child(1n+2){
+    min-width: 90px;
+    width: 100px;
+    max-width: 120px;
+}   */
+
+.c-view-grid-table input[type="radio"] {
+  cursor: move;
+} 
+
+
+/* scaleField */
+.c-view-scale-tr  td:first-child 
+{
+
+    text-align: left;
+}
+
+.c-view-scale-table  {
+    border: 0;
+    border-collapse: collapse;
+}
+
+.c-view-scale-table td {
+    padding: .5em .25em;
+}
+
+.c-view-scale-table tr {
+    border-bottom: 1px solid #d3d8d3; 
+    color: #666;
+    text-align: center;
+}
+
+.c-view-scale-table tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+.c-view-scale-table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.c-view-scale-table input[type="radio"] {
+  cursor: move;
+}
+
+
+/* section header */
+.c-view-sectionHeader-div {
+  cursor: move;
+  color: black;
+  width: 741px;
+  margin-left: 14px;
+  padding-bottom: 14px;
+}
+
+
+.c-view-sectionHeader-header {
+    background-color: #eee;
+    padding: 0.4em;
+    margin: 2em -0.4em 0;
+}
+
+
+.c-view-sectionHeader-description {
+    margin-top: 0.5em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+
+
+
+
+

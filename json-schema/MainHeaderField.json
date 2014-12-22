@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "MainHeaderField",
+    "description": "MainHeaderField for FormBuilder",
+    "type": "object",
+    "properties": {
+        "type": {
+            "description": "mainHeader is the identifier for the MainHeaderField type",
+            "type": "string"
+        },
+        "title": {
+            "headerText": "header text",
+            "type": "string"
+        },
+        "descriptionText": {
+            "description": "description text for the header",
+            "type": "string"
+        }
+    },
+    "required": ["type"]
+}

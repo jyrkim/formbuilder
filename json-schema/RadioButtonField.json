@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "RadioButton (MultiChoice) Field",
+    "description": "description": "RadioButton for FormBuilder",
+    "type": "object",
+    "properties": {
+        "type": {
+            "description": "radioButton is the identifier for a RadioButton type",
+            "type": "string"
+        },
+         "title": {
+            "description": "title text text for a RadioButton",
+            "type": "string"
+        },
+        "helpText": {
+            "description": "help text for a RadioButton",
+            "type": "string"
+        },
+		"optionsText": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                },
+                "minItems": 1
+         },
+		 "useOther": {
+            "description": "use other field for option texts",
+            "type": "boolean"
+        },
+		"requiredQuestion": {
+            "description": "is field a required Question",
+            "type": "boolean"
+        },
+		"advancedSettings": {
+                "type": "object",
+                "properties": {
+					"shuffleOrder": {
+					    "description": "is shuffle order used for radio buttons",
+						"type": "boolean" 
+					}
+					
+                }
+         }
+    },
+    "required": ["type"]
+}
+

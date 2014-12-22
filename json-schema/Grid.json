@@ -1,0 +1,57 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Grid Field",
+    "description": "description": "Grid Field for FormBuilder." ,
+    "type": "object",
+    "properties": {
+        "type": {
+            "description": "grid is the identifier for a Grid field type",
+            "type": "string"
+        },
+        "title": {
+            "description": "title text text for a Grid",
+            "type": "string"
+        },
+        "helpText": {
+            "description": "help text for a Grid",
+            "type": "string"
+        },
+		"rowLabels": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                },
+                "minItems": 1
+         },
+		"columnLabels": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                },
+                "minItems": 1
+         },
+		 "requiredQuestion": {
+            "description": "is field a required Question",
+            "type": "boolean"
+        },
+		"advancedSettings": {
+                "type": "object",
+                "properties": {
+				    "limitOneResponsePerColumn": {
+					    "description": "only allow one response per column if true",
+						"type": "boolean" 
+					},
+					"shuffleOrder": {
+					    "description": "is shuffle order used for grid rows",
+						"type": "boolean" 
+					},
+					"errorText": {
+						"description": "error text",
+               			"type": "string"
+        			}			
+                }
+          }
+    },
+    "required": ["type"]
+}
+

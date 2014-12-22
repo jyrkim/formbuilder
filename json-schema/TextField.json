@@ -1,0 +1,109 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "TextField",
+    "description": "TextField for FormBuilder",
+    "type": "object",
+    "properties": {
+        "type": {
+            "description": "textField is the identifier for a TextField type",
+            "type": "string"
+        },
+        "title": {
+            "description": "title text for a TextField question",
+            "type": "string"
+        },
+        "helpText": {
+            "description": "help text for a TextField",
+            "type": "string"
+        },
+		"requiredQuestion": {
+            "description": "is the field a required question",
+            "type": "boolean"
+        },
+		"advancedSettings": {
+                "type": "object",
+                "properties": {
+                    "dataValidation": {
+                        "description": "is data validation used true/false", 
+						"type": "boolean" 
+					},
+                    "validationType": {
+                        "description": "what type of validation is done: number, text, regular expression",
+					    "type": "string",
+                        "oneOf": [
+							{ "format": "number" },
+                			{ "format": "text" },              		
+                		    { "format": "regular_expression" } ] 
+					},
+                    "numberValidation": {
+						"type": "object",
+                		"properties": {
+							"description": "how number is validated",
+							"type": "string",
+                        		"oneOf": [
+									{ "format": "greater_than" }, 
+                					{ "format": "greater_than_or_equal_to" },              		
+                					{ "format": "less_than" }, 
+                                	{ "format": "less_than_or_equal_to" },
+									{ "format": "equal_to" }, 
+                                	{ "format": "not_equal_to" },
+                                    { "format": "between" }, 
+                                    { "format": "not_between" },
+                                    { "format": "is_number" }, 
+                                	{ "format": "whole_number" } ]
+							},
+			 				"number": {
+                        			"description": number used for a validation, not used with whole_number",
+               	        			"type": "number"
+        	     			},
+                     		number_2nd": {
+                        			"description": only for number validation with between and not_between",
+               	        			"type": "number"
+        	     			}
+						}
+					 },
+					 "textValidation": {
+						"type": "object",
+                		"properties": {
+								"description": "how text is validated",
+								"type": "string",
+                        			"oneOf": [
+										{ "format": "contains" },
+                						{ "format": "does_not_contain" },              		
+                						{ "format": "email_address" },
+										{ "format": "url" } ]
+								},
+			 					"text": {
+                        				"description": text used for a validation, not used with the following: email_address and url",
+               	        				"type": "string"
+        	     				}
+							}
+					 },
+					 "regExpValidation": {
+							"type": "object",
+                			"properties": {
+							"type": {
+								"description": "how regular expression is validated",
+								"type": "string",
+                        			"oneOf": [
+										{ "format": "contains" },
+                						{ "format": "does_not_contain" },              		
+                						{ "format": "matches"},
+										{ "format": "does_not_match" } ]
+							  },
+			 				 "pattern": {
+                        			"description": "text pattern used for a validation",
+               	        			"type": "string"
+        	     			 }
+						}
+					 },
+					"errorText": {
+						"description": "error text",
+               			"type": "string"
+        			}
+                },
+                "required": ["dataValidation"]
+            }
+    },
+    "required": ["type"]
+}

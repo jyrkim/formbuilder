@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "List Field (MultiChoice)",
+    "description": "description": "List Field (Select) for FormBuilder. Appears for the user as <INPUT Type='Select' >",
+    "type": "object",
+    "properties": {
+        "type": {
+            "description": "list is the identifier for a List type",
+            "type": "string"
+        },
+        "title": {
+            "description": "title text text for a List",
+            "type": "string"
+        },
+        "helpText": {
+            "description": "help text for a List",
+            "type": "string"
+        },
+		"optionsText": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                },
+                "minItems": 1
+         }, 
+		 "requiredQuestion": {
+            "description": "is field a required Question",
+            "type": "boolean"
+        },
+		"advancedSettings": {
+                "type": "object",
+                "properties": {
+					"shuffleOrder": {
+					    "description": "is shuffle order used for list items",
+						"type": "boolean" 
+					}
+					
+                },
+            }
+
+    },
+    "required": ["type"]
+}
+

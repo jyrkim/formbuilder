@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "TimeField",
+    "description": "ScaleField for FormBuilder",
+    "type": "object",
+    "properties": {
+        "type": {
+            "description": "timeField is the identifier for a TimeField type",
+            "type": "string"
+        },
+        "title": {
+            "description": "title text for a TimeField question",
+            "type": "string"
+        },
+        "helpText": {
+            "description": "help text for a TimeField",
+            "type": "string"
+        },
+		"requiredQuestion": {
+            "description": "is this field a required question",
+            "type": "boolean"
+        },
+		"durationMode": {
+            "description": "if true TimeField represents a timer; if false TimeFields represent a clock",
+            "type": "boolean"
+        }
+    },
+    "required": ["type"]
+}

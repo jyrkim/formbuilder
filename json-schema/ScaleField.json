@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "ScaleField",
+    "description": "ScaleField for FormBuilder",
+    "type": "object",
+    "properties": {
+        "type": {
+            "description": "scaleField is the identifier for a ScaleField type",
+            "type": "string"
+        },
+        "title": {
+            "description": "title text for a ScaleField question",
+            "type": "string"
+        },
+        "helpText": {
+            "description": "help text for a ScaleField",
+            "type": "string"
+        },
+		"requiredQuestion": {
+            "description": "is this field a required question",
+            "type": "boolean"
+        },
+		"from": {
+            "description": "ScaleField starts from number",
+            "type": "number"
+        },
+        "to": {
+            "description": "ScaleField ends at number",
+            "type": "number"
+        },
+		"fromLabel": {
+            "description": "optional label",
+            "type": "string"
+        },
+        "toLabel": {
+            "description": "optional label",
+            "type": "string"
+        }
+    },
+    "required": ["type"]
+}
