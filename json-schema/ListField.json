@@ -5,39 +5,37 @@
     "type": "object",
     "properties": {
         "type": {
-            "description": "list is the identifier for a List type",
-            "type": "string"
+            	"description": "list is the identifier for a List type",
+            	"type": "string"
         },
         "title": {
-            "description": "title text text for a List",
-            "type": "string"
+            	"description": "title text text for a List",
+            	"type": "string"
         },
         "helpText": {
-            "description": "help text for a List",
-            "type": "string"
+            	"description": "help text for a List",
+            	"type": "string"
         },
-		"optionsText": {
+	"optionsText": {
                 "type": "array",
                 "items": {
                     "type": "string"
                 },
                 "minItems": 1
-         }, 
-		 "requiredQuestion": {
-            "description": "is field a required Question",
-            "type": "boolean"
+        }, 
+	"requiredQuestion": {
+            	"description": "is field a required Question",
+            	"type": "boolean"
         },
-		"advancedSettings": {
+	"advancedSettings": {
                 "type": "object",
                 "properties": {
-					"shuffleOrder": {
-					    "description": "is shuffle order used for list items",
-						"type": "boolean" 
-					}
-					
-                },
-            }
-
+			"shuffleOrder": {
+				"description": "is shuffle order used for list items",
+				"type": "boolean" 
+			}
+                }
+        }
     },
     "required": ["type"]
 }
