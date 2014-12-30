@@ -23,55 +23,55 @@
         "advancedSettings": {
                 "type": "object",
                 "properties": {
-                    "dataValidation": {
-                        "description": "is data validation used true/false",
-						"type": "boolean"
-				     },
-					"validationType": {
-						"description": "what type of validation is done: text or regular expression",
+                    	"dataValidation": {
+                        	"description": "is data validation used true/false",
+				"type": "boolean"
+			},
+			"validationType": {
+				"description": "what type of validation is done: text or regular expression",
+				"type": "string",
+				"oneOf": [
+                			{ "format": "text" },              		
+                			{ "format": "regular_expression" }]
+			},
+			"textValidation": {
+				"type": "object",
+                		"properties": {
+					"type": {
+						"description": "how input is validated in the paragraph field. i.e character count evaluation: min or max",
 						"type": "string",
-									"oneOf": [
-                					{ "format": "text" },              		
-                					{ "format": "regular_expression" }]
-				     },
-				    "textValidation": {
-						"type": "object",
-                		"properties": {
-							"type": {
-								"description": "how input is validated in the paragraph field. i.e character count evaluation: min or max",
-								"type": "string",
                         			"oneOf": [
-										{ "format": "max_char_count" },
-                						{ "format": "min_char_count" } ]             	
-							},
-			 				"charCount": {
-                        		"description": "character count number limit used in the validation",
-               	        		"type": "number"
+							{ "format": "max_char_count" },
+                					{ "format": "min_char_count" } ]             	
+						},
+			 		"charCount": {
+                        			"description": "character count number limit used in the validation",
+               	        			"type": "number"
         	     			}
-						}
-					},
-					"regExpValidation": {
-						"type": "object",
+				}
+			},
+			"regExpValidation": {
+				"type": "object",
                 		"properties": {
-							"type": {
-								"description": "how regular expression is validated in the paragraph field",
-								"type": "string",
+					"type": {
+					"description": "how regular expression is validated in the paragraph field",
+						"type": "string",
                         			"oneOf": [
-										{ "format": "contains" },
-                						{ "format": "does_not_contain" },              		
-                						{ "format": "matches"},
-										{ "format": "does_not_match" } ]
-							},
-			 				"pattern": {
-                        		"description": "text pattern used for a validation",
-               	        		"type": "string"
+							{ "format": "contains" },
+                					{ "format": "does_not_contain" },              		
+                					{ "format": "matches"},
+							{ "format": "does_not_match" } ]
+						},
+			 		"pattern": {
+                        			"description": "pattern used for a validation",
+               	        			"type": "string"
         	     			}
-						}
-					},
-					"errorText": {
-						"description": "error text",
+				}
+			},
+			"errorText": {
+				"description": "error text",
                			"type": "string"
-        			}
+        		}
                 },
                 "required": ["dataValidation"]
             }
