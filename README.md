@@ -4,7 +4,7 @@ This a project for JavaScript/jQuery app that builds Web forms. The current vers
 
 The form building part of the app is pretty much complete and workable solution. The actual form part of the app is still under construction, as the data validation is incomplete.  You can also use the form builder to create your own forms by extending the app. 
 
-The demo for the project can be found at: http://mysterious-caverns-1462.herokuapp.com/FormBuilder.html
+Demo http://mysterious-caverns-1462.herokuapp.com/FormBuilder.html
 
 The form builder part returns data that can be used to build your own plugin for form creation and validation. The get the data, you can access the fields to be included in the created form with the following JavaScript:
   ```
