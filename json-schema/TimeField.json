@@ -16,11 +16,11 @@
             "description": "help text for a TimeField",
             "type": "string"
         },
-		"requiredQuestion": {
+	"requiredQuestion": {
             "description": "is this field a required question",
             "type": "boolean"
         },
-		"durationMode": {
+	"durationMode": {
             "description": "if true TimeField represents a timer; if false TimeFields represent a clock",
             "type": "boolean"
         }
