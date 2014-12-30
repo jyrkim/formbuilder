@@ -5,16 +5,16 @@
     "type": "object",
     "properties": {
         "type": {
-            "description": "checkBox is the identifier for a CheckBox type",
-            "type": "string"
+            	"description": "checkBox is the identifier for a CheckBox type",
+            	"type": "string"
         },
         "title": {
-            "description": "title text text for a CheckBox",
-            "type": "string"
+            	"description": "title text text for a CheckBox",
+            	"type": "string"
         },
         "helpText": {
-            "description": "help text for a CheckBox",
-            "type": "string"
+            	"description": "help text for a CheckBox",
+            	"type": "string"
         },
 	"optionsText": {
                 "type": "array",
@@ -28,8 +28,8 @@
 		"type": "boolean"
         },
       	"requiredQuestion": {
-            "description": "is field a required Question",
-            "type": "boolean"
+            	"description": "is field a required Question",
+            	"type": "boolean"
         },
 	"advancedSettings": {
                 "type": "object",
@@ -58,7 +58,7 @@
 			"shuffleOrder": {
 				"description": "is shuffle order used for checkboxes",
 				"type": "boolean" 
-					}
+			},
 			"errorText": {
 				"description": "error text",
                			"type": "string"
