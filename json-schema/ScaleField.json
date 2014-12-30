@@ -20,7 +20,7 @@
             "description": "is this field a required question",
             "type": "boolean"
         },
-		"from": {
+	"from": {
             "description": "ScaleField starts from number",
             "type": "number"
         },
