@@ -54,7 +54,7 @@
 				"type": "object",
                 		"properties": {
 					"type": {
-					"description": "how regular expression is validated in the paragraph field",
+						"description": "how regular expression is validated in the paragraph field",
 						"type": "string",
                         			"oneOf": [
 							{ "format": "contains" },
