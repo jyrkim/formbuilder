@@ -16,7 +16,7 @@
             "description": "help text for a ScaleField",
             "type": "string"
         },
-		"requiredQuestion": {
+	"requiredQuestion": {
             "description": "is this field a required question",
             "type": "boolean"
         },
@@ -28,7 +28,7 @@
             "description": "ScaleField ends at number",
             "type": "number"
         },
-		"fromLabel": {
+	"fromLabel": {
             "description": "optional label",
             "type": "string"
         },
