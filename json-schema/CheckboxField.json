@@ -16,55 +16,56 @@
             "description": "help text for a CheckBox",
             "type": "string"
         },
-		"optionsText": {
+	"optionsText": {
                 "type": "array",
                 "items": {
                     "type": "string"
                 },
                 "minItems": 1
-         }, 
-		 "useOther": {
-				"description": "use other field for option texts",
-				"type": "boolean"
+        }, 
+	"useOther": {
+		"description": "use other field for option texts",
+		"type": "boolean"
         },
-		"requiredQuestion": {
+      	"requiredQuestion": {
             "description": "is field a required Question",
             "type": "boolean"
         },
-		"advancedSettings": {
+	"advancedSettings": {
                 "type": "object",
                 "properties": {
-                    "dataValidation": {
-                        "description": "is data validation used true/false",
-						"type": "boolean"
-				     },
-				     "checkBoxValidation": {
-					    "description": "what type of check count validation is done",
-						"type": "object",
+                       "dataValidation": {
+                        	"description": "is data validation used true/false",
+				"type": "boolean"
+			},
+			"checkBoxValidation": {
+			 	"description": "what type of check count validation is done",
+				"type": "object",
                 		"properties": {
-								"type": "string",
-									"oneOf": [
-                						{ "format": "select_at_least" },              		
-                						{ "format": "select_at_most" },
-										{ "format": "select_exactly" } ]
-								},
-			 					"checkCount": {
-									"description": "number value used for checkbox validation",
-									"type": "number"
-								},
-							}
-					 },
-					"shuffleOrder": {
-					    "description": "is shuffle order used for checkboxes",
-						"type": "boolean" 
+					"type": { 
+						"type" : "string",
+						"oneOf": [
+                					{ "format": "select_at_least" },              		
+                					{ "format": "select_at_most" },
+							{ "format": "select_exactly" } ]
+					},
+			 		"checkCount": {
+						"description": "number value used for checkbox validation",
+						"type": "number"
 					}
-					"errorText": {
-						"description": "error text",
+				}
+			},
+			"shuffleOrder": {
+				"description": "is shuffle order used for checkboxes",
+				"type": "boolean" 
+					}
+			"errorText": {
+				"description": "error text",
                			"type": "string"
-        			}
+        		}
                 },
                 "required": ["dataValidation"]
-            }
+        }
 
     },
     "required": ["type"]
