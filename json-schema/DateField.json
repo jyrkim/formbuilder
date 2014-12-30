@@ -16,15 +16,15 @@
             "description": "help text for a DateField",
             "type": "string"
         },
-		"requiredQuestion": {
+	"requiredQuestion": {
             "description": "is this field a required question",
             "type": "boolean"
         },
-		"includeYear": {
+	"includeYear": {
             "description": "if true show and allow year input for the DateField; if false then year input is hidden",
             "type": "boolean"
         },
-		"includeTime": {
+	"includeTime": {
             "description": "if true show and allow time input for the DateField; if false then time input is hidden",
             "type": "boolean"
         }
