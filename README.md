@@ -27,4 +27,4 @@ The form part of the project that is under construction uses <a href="http://get
 
 The form builder’s appearance and usability resemble quite a lot of one well-known Forms app that I admire a lot; so only most of the JavaScript/jQuery/JSON in the project is original, apart from jQuery and jQueryUI libraries that are used in the project. 
 
-If you have any question, then you can reach me with email at: jyrki.mizaras[AT]gmail.com
+
